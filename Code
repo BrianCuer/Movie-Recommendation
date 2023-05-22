@@ -1,0 +1,18 @@
+# Import pandas library and read in data as a dataframe 
+import pandas as pd
+films = pd.read_csv('l')
+
+# Made a function that takes all the titles in the movie dataframe and removes any characters that are not letters or numbers, like hyphons or brackets
+import string
+def title_cleaner(title):
+    clean_title = " "
+    alphabet = list(string.ascii_letters)
+    numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"," "]
+    for i in title:
+        if (i in alphabet) or (i in numbers):
+            clean_title += i
+    return clean_title
+    
+    
+# Reading in ratings data
+ratingsDF
